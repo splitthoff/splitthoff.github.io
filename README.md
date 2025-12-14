@@ -3,11 +3,14 @@
 ## About me
 Hi everyone, I am a physics master’s student at the University of Heidelberg! 
 
+<img src="./profile.jpg" alt="Profile picture" width="220" align="right" />
+
 ## Projects
 - **Master’s thesis** (in progress): Working title: “Unveiling the Most Luminous Quasar Around Cosmic Noon and Be
 yond,” conducted at the Max Planck Institute for Astronomy (MPIA) in Heidelberg under the supervision of Dr. Julien Wolf and Dr. Silvia Belladitta
 - **Bachelor’s thesis**: “Passively Evolving Galaxies in the Vicinity of the Quasar APM 08279+5255 at 
 Redshift z = 3.9” at the Landessternwarte Heidelberg, supervised by Prof. Dr. Jochen Heidt
+
 ## Research interests
 My particular interest lies in investigating dynamic processes in active galactic nuclei and the formation 
 and evolution of (super-) massive black holes, approached from both observational and theoretical per
