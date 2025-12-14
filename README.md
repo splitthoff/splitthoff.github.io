@@ -1,4 +1,5 @@
-<img src="./profile.jpg" alt="Profile picture" width="300" align="right" />
+<img src="./profile.jpg" alt="Profile picture" width="330" align="right" />
+
 ## About me
 Hi everyone, I am a physics master’s student at the University of Heidelberg! 
 
