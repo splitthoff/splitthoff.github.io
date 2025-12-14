@@ -1,5 +1,5 @@
 <figure align="right">
-  <img src="./profile.jpg" alt="Profile picture" width="220" />
+  <img src="./profile.jpg" alt="Profile picture" width="330" align="right" />
   <figcaption><i>Me (left) and my brother (right) in Göteborg, Sweden.</i></figcaption>
 </figure>
 
