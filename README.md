@@ -1,6 +1,7 @@
-<img src="./profile.jpg" alt="Profile picture" width="330" align="right" />
-<br/>
-<i>Me (left) and my brother (right) in Göteborg, Sweden.</i>
+<figure align="right">
+  <img src="./profile.jpg" alt="Profile picture" width="220" />
+  <figcaption><i>Me (left) and my brother (right) in Göteborg, Sweden.</i></figcaption>
+</figure>
 
 ## About me
 Hi everyone, I am a physics master’s student at the University of Heidelberg! 
