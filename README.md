@@ -11,9 +11,9 @@ spectives. I am especially fascinated by the role of extreme objects, such as qu
 formation and galaxy evolution.
 
 ## Skills 
-**Languages:** German (native), English (fluent, C1), French (intermediate, B1)
-**Programming skills:**  Python, C++, ADQL, TOPCAT, Source Extractor
-**Activities:**  Triathlon and bouldering; regular voluntary work as a lifeguard team leader and instructor at 
+- **Languages:** German (native), English (fluent, C1), French (intermediate, B1)
+- **Programming skills:**  Python, C++, ADQL, TOPCAT, Source Extractor
+- **Activities:**  Triathlon and bouldering; regular voluntary work as a lifeguard team leader and instructor at 
 the Baltic Sea; swimming coach with DLRG Nottuln and DLRG Dossenheim for over 10 years
 
 splitthoff.github.io
