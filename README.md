@@ -1,9 +1,7 @@
-
-
 ## About me
 Hi everyone, I am a physics master’s student at the University of Heidelberg! 
-
 <img src="./profile.jpg" alt="Profile picture" width="220" align="right" />
+
 
 ## Projects
 - **Master’s thesis** (in progress): Working title: “Unveiling the Most Luminous Quasar Around Cosmic Noon and Be
@@ -22,5 +20,9 @@ formation and galaxy evolution.
 - **Programming skills:**  Python, C++, ADQL, TOPCAT, Source Extractor
 - **Activities:**  Triathlon and bouldering; regular voluntary work as a lifeguard team leader and instructor at 
 the Baltic Sea; swimming coach with DLRG Nottuln and DLRG Dossenheim for over 10 years
+
+
+## Contact
+- **E-mail:** sebastian.splitthoff@gmail.com
 
 splitthoff.github.io
