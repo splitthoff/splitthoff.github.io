@@ -7,7 +7,7 @@ Hi everyone, I am a physics master’s student at the University of Heidelberg!
 </figure>
 
 ## Projects
-- **Master’s thesis** (in progress): Working title: “Unveiling the Most Luminous Quasar Around Cosmic Noon and Beyond,” conducted at the Max Planck Institute for Astronomy (MPIA) in Heidelberg under the supervision of Dr. Julien Wolf and Dr. Silvia Belladitta
+- **Master’s thesis** (in progress): Working title: “Unveiling hyperluminous quasars around cosmic noon using Gaia DR3 XP and SPHEREx spectra” conducted at the Max Planck Institute for Astronomy (MPIA) in Heidelberg under the supervision of Dr. Julien Wolf and Dr. Silvia Belladitta
 - **Bachelor’s thesis**: “Passively Evolving Galaxies in the Vicinity of the Quasar APM 08279+5255 at 
 Redshift z = 3.9” at the Landessternwarte Heidelberg, supervised by Prof. Dr. Jochen Heidt
 
