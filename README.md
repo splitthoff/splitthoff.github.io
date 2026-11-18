@@ -1,5 +1,5 @@
 ## About me
-Hi everyone, I am a PhD student at the MPE in Garching! 
+Hi everyone, I am a PhD student at the Max Planck Institute for Extraterrestrial Physics! 
 
 <figure align="right">
   <img src="./profile.jpg" alt="Profile picture" width="220" />
