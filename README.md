@@ -1,5 +1,5 @@
 ## About me
-Hi everyone, I am a physics master’s student at the University of Heidelberg! 
+Hi everyone, I am a PhD student at the MPE in Garching! 
 
 <figure align="right">
   <img src="./profile.jpg" alt="Profile picture" width="220" />
