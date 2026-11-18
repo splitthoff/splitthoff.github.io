@@ -7,7 +7,8 @@ Hi everyone, I am a physics master’s student at the University of Heidelberg!
 </figure>
 
 ## Projects
-- **Master’s thesis** (in progress): Working title: “Unveiling hyperluminous quasars around cosmic noon using Gaia DR3 XP and SPHEREx spectra” conducted at the Max Planck Institute for Astronomy (MPIA) in Heidelberg under the supervision of Dr. Julien Wolf and Dr. Silvia Belladitta
+- **PhD project** (in progress): "Evolution of Supermassive Black Hole Accretion at High Redshift" at the Max Planck Institute for Extraterrestrial Physics (MPE) under the supervision of Dr. Mara Salvato, Prof. Dr. Kirpal Nandra
+- **Master’s thesis**: “Unveiling hyperluminous quasars around cosmic noon using Gaia DR3 XP and SPHEREx spectra” conducted at the Max Planck Institute for Astronomy (MPIA) in Heidelberg under the supervision of Dr. Julien Wolf and Dr. Silvia Belladitta
 - **Bachelor’s thesis**: “Passively Evolving Galaxies in the Vicinity of the Quasar APM 08279+5255 at 
 Redshift z = 3.9” at the Landessternwarte Heidelberg, supervised by Prof. Dr. Jochen Heidt
 
@@ -24,6 +25,6 @@ the Baltic Sea; swimming coach with DLRG Nottuln and DLRG Dossenheim for over 10
 
 
 ## Contact
-- **E-mail:** sebastian.splitthoff@gmail.com
+- **E-mail:** splitthoff@mpe.mpg.de
 
 splitthoff.github.io
