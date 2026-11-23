@@ -1,345 +1,129 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sebastian Splitthoff</title>
-  <meta name="description" content="Physics master’s student at Heidelberg University, working on hyperluminous quasars at the Max Planck Institute for Astronomy.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastian Splitthoff</title>
+<meta name="description" content="Sebastian Splitthoff, PhD student at the Max Planck Institute for Extraterrestrial Physics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdfcf9;
+    --text: #222;
+    --muted: #6b6b6b;
+    --rule: #ddd9d0;
+    --link: #1f4e8c;
+  }
+  @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #f7f6f2;
-      --surface: #ffffff;
-      --text: #1d1f24;
-      --muted: #5c6270;
-      --line: #e3e1da;
-      --accent: #2f5bd3;
-      --accent-soft: #e8eefc;
-      --hero-from: #0b1026;
-      --hero-to: #1b2552;
+      --bg: #161616;
+      --text: #e4e2dd;
+      --muted: #9a978f;
+      --rule: #333;
+      --link: #8fb4e8;
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1117;
-        --surface: #171a22;
-        --text: #e7e8ec;
-        --muted: #9aa0ad;
-        --line: #272b36;
-        --accent: #8aa8ff;
-        --accent-soft: #1d2540;
-        --hero-from: #05070f;
-        --hero-to: #121a3a;
-      }
-    }
+  }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 400 17px/1.7 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 18px/1.6 "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 20px 64px;
+  }
+  a { color: var(--link); text-underline-offset: 2px; }
 
-    /* ---------- Hero ---------- */
-    .hero {
-      position: relative;
-      overflow: hidden;
-      color: #f2f4fb;
-      background: linear-gradient(160deg, var(--hero-from), var(--hero-to));
-      padding: 96px 20px 120px;
-    }
-    .hero::before {
-      /* subtle star field */
-      content: "";
-      position: absolute; inset: 0;
-      background-image:
-        radial-gradient(1px 1px at 12% 22%, #fff9 50%, transparent 51%),
-        radial-gradient(1px 1px at 28% 68%, #fff7 50%, transparent 51%),
-        radial-gradient(1.5px 1.5px at 41% 35%, #fffc 50%, transparent 51%),
-        radial-gradient(1px 1px at 57% 80%, #fff8 50%, transparent 51%),
-        radial-gradient(1px 1px at 66% 18%, #fff9 50%, transparent 51%),
-        radial-gradient(1.5px 1.5px at 79% 55%, #fffb 50%, transparent 51%),
-        radial-gradient(1px 1px at 88% 28%, #fff7 50%, transparent 51%),
-        radial-gradient(1px 1px at 94% 74%, #fff8 50%, transparent 51%),
-        radial-gradient(1px 1px at 6% 82%, #fff6 50%, transparent 51%),
-        radial-gradient(1px 1px at 50% 10%, #fff6 50%, transparent 51%);
-      pointer-events: none;
-    }
-    .hero::after {
-      /* soft glow, a nod to quasars */
-      content: "";
-      position: absolute;
-      width: 520px; height: 520px;
-      right: -140px; top: -160px;
-      background: radial-gradient(circle, rgba(138,168,255,.35), transparent 65%);
-      pointer-events: none;
-    }
-    .hero-inner {
-      position: relative; z-index: 1;
-      max-width: 880px; margin: 0 auto;
-    }
-    .eyebrow {
-      font-size: 13px; font-weight: 600;
-      letter-spacing: .14em; text-transform: uppercase;
-      color: #a9b8ea;
-      margin: 0 0 14px;
-    }
-    .hero h1 {
-      font-family: Fraunces, Georgia, serif;
-      font-weight: 600;
-      font-size: clamp(38px, 7vw, 60px);
-      line-height: 1.08;
-      margin: 0 0 18px;
-      letter-spacing: -0.01em;
-    }
-    .hero p.lead {
-      max-width: 600px;
-      font-size: 19px;
-      color: #cfd6ee;
-      margin: 0 0 28px;
-    }
-    .hero-links { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      font-size: 15px; font-weight: 500;
-      border: 1px solid rgba(255,255,255,.25);
-      color: #fff;
-      background: rgba(255,255,255,.06);
-      transition: background .2s, border-color .2s;
-    }
-    .btn:hover { text-decoration: none; background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.45); }
-    .btn.primary { background: #fff; color: #0b1026; border-color: #fff; }
-    .btn.primary:hover { background: #e6ebff; }
+  header { margin-bottom: 8px; }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 2px;
+  }
+  .affil { color: var(--muted); margin: 0; }
 
-    /* ---------- Layout ---------- */
-    main {
-      max-width: 880px;
-      margin: -64px auto 0;
-      padding: 0 20px 64px;
-      position: relative; z-index: 2;
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 36px 40px;
-      margin-bottom: 24px;
-      box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 8px 30px rgba(15,20,40,.05);
-    }
-    h2 {
-      font-family: Fraunces, Georgia, serif;
-      font-weight: 600;
-      font-size: 26px;
-      margin: 0 0 18px;
-      display: flex; align-items: center; gap: 12px;
-    }
-    h2::before {
-      content: "";
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 5px var(--accent-soft);
-      flex: none;
-    }
-    p { margin: 0 0 14px; }
-    p:last-child { margin-bottom: 0; }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 10px; }
+  em { font-style: italic; }
+  .note { color: var(--muted); }
 
-    /* About */
-    .about {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 36px;
-      align-items: center;
-    }
-    .about figure { margin: 0; }
-    .about img {
-      display: block; width: 100%; height: auto;
-      aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 60%;
-      border-radius: 14px;
-    }
-    .about figcaption {
-      font-size: 14px; color: var(--muted);
-      font-style: italic;
-      margin-top: 10px;
-    }
+  figure {
+    float: right;
+    width: 260px;
+    margin: 6px 0 12px 24px;
+  }
+  figure img { display: block; width: 100%; height: auto; }
+  figcaption {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .clear { clear: both; }
 
-    /* Projects timeline */
-    .timeline { list-style: none; margin: 0; padding: 0; }
-    .timeline li {
-      position: relative;
-      padding: 0 0 26px 28px;
-      border-left: 2px solid var(--line);
-    }
-    .timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
-    .timeline li::before {
-      content: "";
-      position: absolute; left: -7px; top: 6px;
-      width: 12px; height: 12px; border-radius: 50%;
-      background: var(--surface);
-      border: 2px solid var(--accent);
-    }
-    .timeline li.current::before { background: var(--accent); }
-    .tl-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 4px; }
-    .tl-title { font-weight: 600; font-size: 18px; }
-    .badge {
-      font-size: 12px; font-weight: 600;
-      padding: 2px 10px; border-radius: 999px;
-      background: var(--accent-soft); color: var(--accent);
-    }
-    .tl-thesis {
-      font-family: Fraunces, Georgia, serif;
-      font-size: 18px; line-height: 1.5;
-      margin: 4px 0 6px;
-    }
-    .tl-meta { color: var(--muted); font-size: 15px; }
+  footer {
+    margin-top: 48px;
+    font-size: 14px;
+    color: var(--muted);
+  }
 
-    /* Skills */
-    .skills { display: grid; gap: 22px; }
-    .skill-label {
-      font-size: 13px; font-weight: 600;
-      letter-spacing: .08em; text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
-    .chips li {
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: var(--bg);
-      border: 1px solid var(--line);
-      font-size: 15px;
-    }
-    .chips li span { color: var(--muted); }
-    .skills p { color: var(--text); }
-
-    /* Contact */
-    .contact { text-align: center; }
-    .contact h2 { justify-content: center; }
-    .contact a.mail {
-      font-family: Fraunces, Georgia, serif;
-      font-size: clamp(20px, 4vw, 26px);
-      word-break: break-all;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      padding: 0 20px 40px;
-    }
-
-    @media (max-width: 720px) {
-      .hero { padding: 64px 16px 100px; }
-      main { padding: 0 16px 48px; }
-      .card { padding: 26px 22px; border-radius: 16px; }
-      .about { grid-template-columns: 1fr; gap: 24px; }
-    }
-  </style>
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .page { padding: 36px 16px 48px; }
+    figure { float: none; width: auto; margin: 16px 0; }
+  }
+</style>
 </head>
 <body>
+<div class="page">
 
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Physics · Astronomy · Heidelberg</p>
-      <h1>Sebastian Splitthoff</h1>
-      <p class="lead">Physics master’s student at Heidelberg University, studying hyperluminous quasars at the Max Planck Institute for Astronomy.</p>
-      <div class="hero-links">
-        <a class="btn primary" href="mailto:sebastian.splitthoff@gmail.com">Get in touch</a>
-        <a class="btn" href="#projects">Projects</a>
-        <a class="btn" href="#research">Research interests</a>
-      </div>
-    </div>
-  </header>
+<header>
+  <h1>Sebastian Splitthoff</h1>
+  <p class="affil">PhD student, Max Planck Institute for Extraterrestrial Physics</p>
+</header>
 
-  <main>
+<h2>About me</h2>
+<figure>
+  <img src="profile-web.jpg" alt="Sebastian (left) and his brother (right) on the coast near Gothenburg" width="1400" height="1050">
+  <figcaption>Me (left) and my brother (right) in Gothenburg, Sweden.</figcaption>
+</figure>
+<p>Hi everyone, I am a PhD student at the Max Planck Institute for Extraterrestrial Physics!</p>
 
-    <section class="card" id="about">
-      <div class="about">
-        <div>
-          <h2>About me</h2>
-          <p>Hi everyone, I am a physics master’s student at the University of Heidelberg!</p>
-        </div>
-        <figure>
-          <img src="profile-web.jpg" alt="Sebastian (left) and his brother (right) on the rocky coast near Gothenburg" width="1400" height="1050">
-          <figcaption>Me (left) and my brother (right) in Gothenburg, Sweden.</figcaption>
-        </figure>
-      </div>
-    </section>
+<h2 class="clear">Projects</h2>
+<ul>
+  <li><strong>PhD project</strong> <span class="note">(in progress)</span>: <em>Evolution of Supermassive Black Hole Accretion at High Redshift</em>, at the Max Planck Institute for Extraterrestrial Physics (MPE), supervised by Dr. Mara Salvato and Prof. Dr. Kirpal Nandra.</li>
+  <li><strong>Master’s thesis</strong>: <em>Unveiling hyperluminous quasars around cosmic noon using Gaia DR3 XP and SPHEREx spectra</em>, at the Max Planck Institute for Astronomy (MPIA) in Heidelberg, supervised by Dr. Julien Wolf and Dr. Silvia Belladitta.</li>
+  <li><strong>Bachelor’s thesis</strong>: <em>Passively Evolving Galaxies in the Vicinity of the Quasar APM 08279+5255 at Redshift z = 3.9</em>, at the Landessternwarte Heidelberg, supervised by Prof. Dr. Jochen Heidt.</li>
+</ul>
 
-    <section class="card" id="projects">
-      <h2>Projects</h2>
-      <ul class="timeline">
-        <li class="current">
-          <div class="tl-head">
-            <span class="tl-title">Master’s thesis</span>
-            <span class="badge">In progress</span>
-          </div>
-          <p class="tl-thesis">“Unveiling hyperluminous quasars around cosmic noon using Gaia DR3 XP and SPHEREx spectra”</p>
-          <p class="tl-meta">Working title · Max Planck Institute for Astronomy (MPIA), Heidelberg · Supervised by Dr. Julien Wolf and Dr. Silvia Belladitta</p>
-        </li>
-        <li>
-          <div class="tl-head">
-            <span class="tl-title">Bachelor’s thesis</span>
-          </div>
-          <p class="tl-thesis">“Passively Evolving Galaxies in the Vicinity of the Quasar APM 08279+5255 at Redshift z = 3.9”</p>
-          <p class="tl-meta">Landessternwarte Heidelberg · Supervised by Prof. Dr. Jochen Heidt</p>
-        </li>
-      </ul>
-    </section>
+<h2>Research interests</h2>
+<p>My particular interest lies in investigating dynamic processes in active galactic nuclei and the formation and evolution of (super-) massive black holes, approached from both observational and theoretical perspectives. I am especially fascinated by the role of extreme objects, such as quasars, in cosmic structure formation and galaxy evolution.</p>
 
-    <section class="card" id="research">
-      <h2>Research interests</h2>
-      <p>My particular interest lies in investigating dynamic processes in active galactic nuclei and the formation and evolution of (super-) massive black holes, approached from both observational and theoretical perspectives.</p>
-      <p>I am especially fascinated by the role of extreme objects, such as quasars, in cosmic structure formation and galaxy evolution.</p>
-    </section>
+<h2>Skills</h2>
+<ul>
+  <li><strong>Languages:</strong> German (native), English (fluent, C1), French (intermediate, B1)</li>
+  <li><strong>Programming:</strong> Python, C++, ADQL, TOPCAT, Source Extractor</li>
+  <li><strong>Activities:</strong> Triathlon and bouldering; regular voluntary work as a lifeguard team leader and instructor at the Baltic Sea; swimming coach with DLRG Nottuln and DLRG Dossenheim for over 10 years</li>
+</ul>
 
-    <section class="card" id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <div class="skill-label">Languages</div>
-          <ul class="chips">
-            <li>German <span>· native</span></li>
-            <li>English <span>· fluent, C1</span></li>
-            <li>French <span>· intermediate, B1</span></li>
-          </ul>
-        </div>
-        <div>
-          <div class="skill-label">Programming &amp; tools</div>
-          <ul class="chips">
-            <li>Python</li>
-            <li>C++</li>
-            <li>ADQL</li>
-            <li>TOPCAT</li>
-            <li>Source Extractor</li>
-          </ul>
-        </div>
-        <div>
-          <div class="skill-label">Activities</div>
-          <ul class="chips" style="margin-bottom:12px">
-            <li>Triathlon</li>
-            <li>Bouldering</li>
-          </ul>
-          <p>Regular voluntary work as a lifeguard team leader and instructor at the Baltic Sea; swimming coach with DLRG Nottuln and DLRG Dossenheim for over 10 years.</p>
-        </div>
-      </div>
-    </section>
+<h2>Contact</h2>
+<p>E-mail: <a href="mailto:splitthoff@mpe.mpg.de">splitthoff@mpe.mpg.de</a></p>
 
-    <section class="card contact" id="contact">
-      <h2>Contact</h2>
-      <p><a class="mail" href="mailto:sebastian.splitthoff@gmail.com">sebastian.splitthoff@gmail.com</a></p>
-    </section>
+<footer>Last updated November 2026</footer>
 
-  </main>
-
-  <footer>© Sebastian Splitthoff</footer>
-
+</div>
 </body>
 </html>
